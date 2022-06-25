@@ -29,9 +29,13 @@
   <body>
     <main>
       <nav>
-        <img src="./images/logo.svg" alt="" />
+        <div class="logopen">
+            <img src="./images/logo.svg" alt="" />
+            <img src="./images/icon-hamburger.svg" class="open" alt="">
+          </div>
+      <div class="mobile">
         <ul>
-          <li>Product <img src="./images/icon-arrow-light.svg" alt="">
+          <li>Product <img src="./images/icon-arrow-light.svg" class="accordion" alt="">
           <ul>
             <li><a href="#">Overview</a></li>
             <li><a href="#">Pricing</a></li>
@@ -56,10 +60,12 @@
        
               </ul></li>
         </ul>
-        <div>
+        <hr>
+        <div class="nav-links">
           <a href="#" class="navbtn1">Login</a>
           <a href="#" class="navbtn2">Sign Up</a>
         </div>
+      </div>
       </nav>
       <div class="banner">
         <h1>
@@ -158,7 +164,7 @@
               <ul>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Newsletter</a></li>
-                <li><a href="#">LinkedInf</a></li>
+                <li><a href="#">LinkedIn</a></li>
                 
 
 
@@ -166,11 +172,24 @@
             </div>
           </footer>
         </main>
-    <div class="attribution">
+    <div class="attribution" >
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">The Face</a>.
     </div>
+    <script>
+       const openn = document.querySelector(".open");
+      const menu = document.querySelector(".mobile");
+      openn.addEventListener("click", () => {
+        menu.style.display === "none"
+          ? (menu.style.display = "block")(
+              openn.setAttribute("src", "./images/icon-close.svg")
+            )
+          : (menu.style.display = "none")(
+              openn.setAttribute("src", "./images/icon-hamburger.svg")
+            );
+      })
+    </script>
   </body>
 </html>
