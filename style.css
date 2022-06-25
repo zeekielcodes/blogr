@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    /* font-size: 1.6em; */
+}
+
+nav {
+    position: fixed;
+    /* background:  hsl(356, 100%, 66%); */
+    padding: 1em 10em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6em;
+    font-family: Overpass;
+    color: white;
+    width: 100%;
+}
+
+a.navbtn1, a.navbtn2 {
+    font-family: Overpass;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 1em;
+    padding: .5em 2em;
+    font-weight: 700;
+}
+
+a.navbtn1 {
+    /* background: hsl(355, 100%, 74%); */
+    color: white;
+    margin-right: .2em;
+
+}
+
+a.navbtn2 {
+    background: white;
+    color: hsl(356, 100%, 66%);
+}
+
+a.navbtn2:hover {
+    background: hsl(355, 100%, 74%);
+    color: white;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+}
+
+nav ul li ul {
+    display: none;
+    background: white;
+    padding: 1.5em;
+    border-radius: .5em;
+    position: absolute;
+    margin-top: .5em;
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+
+nav ul li ul li {
+    display: block;
+    padding: .5em;
+    font-size: 1em;
+}
+
+nav ul li ul li a {
+    text-decoration: none;
+    color: hsl(237, 23%, 32%);
+}
+
+nav ul li ul li a:hover {
+    color: hsl(240, 10%, 16%);
+    font-weight: 700;
+}
+
+.banner {
+    /* padding: 10em 30em; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50em;
+    background: hsl(356, 100%, 66%);
+    text-align: center;
+    border-radius: 0 0 0 5em;
+    background-image: url("./images/bg-pattern-intro-desktop.svg");
+    /* background-position: right; */
+    background-position: 150%;
+    background-size: 75%;
+    background-repeat: no-repeat;
+}
+
+.banner h1 {
+    font-size: 4em;
+    /* margin-bottom: .5em; */
+    color: white;
+    font-family: Overpass;
+}
+
+.banner p {
+    color: white;
+    font-size: 1.8em;
+    margin: 1em 0 2em 0;
+    font-family: Ubuntu;
+}
+
+.banner a {
+    text-decoration: none;
+    font-size: 1.6em;
+    font-family: Overpass;
+    font-weight: 700;
+    padding: .7em 1.5em;
+    border-radius: 1.5em;
+  
+}
+
+a.cta1 {
+    background: white;
+    color: hsl(356, 100%, 66%);
+}
+
+a.cta1:hover {
+    background: hsl(355, 100%, 74%);
+    color: white;
+    /* border: 1px solid white; */
+}
+
+a.cta2:hover {
+    background: white;
+    color: hsl(356, 100%, 66%);
+    
+}
+
+a.cta2 {
+    color : white;
+   background: hsl(356, 100%, 66%);
+   border: 1px solid white;
+}
+
+.features {
+    padding: 5em 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 3em;
+    font-family: Overpass;
+    color: hsl(237, 23%, 32%);
+}
+
+.feat {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    width: 50%;
+    text-align: left;
+    padding: 3em 2em 3em 10em;
+}
+
+.text h3 {
+    font-size: 1.8em;
+    font-family: Overpass;
+    color: hsl(237, 23%, 32%);
+}
+
+.text p {
+    font-size: 1.3em;
+    line-height: 1.5;
+    margin: 1em 0;
+    width: 90%;
+    font-family: Ubuntu;
+    color: hsl(207, 13%, 34%);
+}
+
+.text div {
+    margin: 5em 0;
+}
+
+.image {
+    width: 50%;
+}
+
+.image img {
+    width: 100%;
+}
+
+.state {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 10em;
+    background: hsl(237, 23%, 32%);
+    height: 25em;
+    width: 100%;
+    border-radius: 0 10em 0 10em;
+
+}
+
+.state-image {
+    background: url("./images/bg-pattern-circles.svg");
+    background-repeat: no-repeat;
+    /* background-position: left; */
+    background-size: contain;
+    width: 50%;
+}
+
+.state-image img {
+    width: 80%;
+}
+
+.state-text {
+    width: 50%;
+}
+
+.state-text h4 {
+    font-size: 2em;
+    color: white;
+    font-family: Overpass;
+    margin-bottom: 1em;
+}
+
+.state-text p {
+    font-size: 1.5em;
+    color: hsl(240, 2%, 79%);
+    line-height: 1.5;
+    font-family: Ubuntu;
+}
+
+.feat2 {
+    display: flex;
+    align-items: center;
+    padding: 10em 0;
+}
+
+.text2 {
+    width: 50%;
+    text-align: left;
+    padding: 3em 10em 3em 0;
+}
+
+.text2 h3 {
+    font-size: 1.8em;
+    font-family: Overpass;
+    color: hsl(237, 23%, 32%);
+}
+
+.text2 p {
+    font-size: 1.3em;
+    line-height: 1.5;
+    margin: 1em 0;
+    width: 90%;
+    font-family: Ubuntu;
+    color: hsl(207, 13%, 34%);
+}
+
+.text2 div {
+    margin: 5em 0;
+}
+
+.image2 {
+    width: 50%;
+}
+
+.image2 img {
+    width: 100%;
+}
+
+
+footer {
+    display: flex;
+    background: hsl(240, 10%, 16%);
+    /* justify-content: space-between; */
+    border-radius: 0 10em 0 0;
+    padding: 5em 10em;
+}
+
+footer div {
+    width: 25%;
+}
+
+footer h5 {
+    font-size: 1.6em;
+    margin-bottom: 1em;
+    color: white;
+    font-family: Overpass;
+}
+
+footer li {
+    padding: .5em 0;
+    font-size: 1.4em;
+    list-style: none;
+}
+
+footer a {
+    color: hsl(240, 2%, 79%);
+    text-decoration: none;
+    font-family: Ubuntu;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
