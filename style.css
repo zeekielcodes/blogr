@@ -334,6 +334,7 @@ footer a:hover {
         padding: 1em 4em;
         display: block;
         background: rgba(0, 0, 0, .2);
+        position: absolute;
     }
 
     .logopen {
@@ -345,15 +346,19 @@ footer a:hover {
 
     .mobile {
         background: white;
-        padding: 2em;
+        padding: 2em 1em;
         border-radius: .3em;
         margin-top: 1em;
         display: none;
+        width: 100%;
+        position: relative;
     }
 
     nav ul li {
         color: hsl(237, 23%, 32%);
         display: block;
+        /* position: relative; */
+        width: 100%;
         /* font-weight: 00; */
     }
 
@@ -381,19 +386,25 @@ footer a:hover {
     nav ul li ul {
         position: relative;
         margin: unset;
-        width: 100%;
-        padding: 1em;
+        /* width: 100%; */
+        font-size: .7em;
+        /* padding: 1em; */
         background: hsl(240, 2%, 79%);
     }
+
+    nav ul li ul li {
+        text-decoration: unset;
+        position: relative;
+
+    }
+
+ 
 
     hr {
         color: hsl(240, 2%, 79%);
         display: block;
     }
 
-    nav ul li ul li {
-        text-decoration: initial;
-    }
 
     nav ul li ul li a {
         color: hsl(237, 23%, 32%);
@@ -402,11 +413,16 @@ footer a:hover {
 
     body {
         text-align: center;
-        font-size: 1.1em;
+        font-size: 1.3em;
+    }
+
+    .feat {
+        padding-bottom: 10em;
+        position: relative;
     }
 
     .text, .text2 {
-        padding: 3em 4em;
+        padding: unset;
     }
     
     .text p, .text2 p {
@@ -414,8 +430,22 @@ footer a:hover {
     }
 
 
-    .feat, .feat2 {
-        display: block;
+    .features {
+        padding: 2em;
+    }
+
+    .feat {
+        flex-direction: column-reverse;
+    }
+
+    .feat2 {
+        flex-direction: column;
+        padding: unset;
+    }
+
+    .text2 {
+        padding: 2em;
+    
     }
 
     .text, .text2, .image, .image2 {
@@ -446,7 +476,8 @@ footer a:hover {
     .state {
         display: block;
         height: unset;
-        padding: 10em  4em;
+        padding: 0 4em 10em  4em;
+        position: relative;
     }
 
     .state-text {
@@ -454,7 +485,6 @@ footer a:hover {
     }
 
     .state-image {
-
         width: 100%;
     }
 
@@ -462,7 +492,7 @@ footer a:hover {
         object-fit: contain;
         height: auto;
         width: 100%;
-        margin-top: -50%;
+        margin-top: -30%;
     }
 
     .open {
@@ -470,10 +500,11 @@ footer a:hover {
     }
 
     .accordion {
-        color: red;
         stroke: red;
-        
+        fill: red;
     }
+
+  
 }
 
 @media (max-width:600px) {
@@ -495,5 +526,9 @@ footer a:hover {
 
     .banner, footer {
         padding: 4em 2em;
+    }
+
+    .banner h1 {
+        font-size: 3em;
     }
 }
