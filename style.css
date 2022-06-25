@@ -417,7 +417,7 @@ footer a:hover {
     }
 
     .feat {
-        padding-bottom: 10em;
+        padding-bottom: 0em;
         position: relative;
     }
 
@@ -508,6 +508,11 @@ footer a:hover {
 }
 
 @media (max-width:600px) {
+
+    body {
+        font-size: 1.1em;
+    }
+    
     nav {
         padding: 1em 2em;
     }
