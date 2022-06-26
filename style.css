@@ -158,6 +158,11 @@ a.cta2 {
    border: 1px solid white;
 }
 
+.mobile {
+    display: flex;
+    align-items: center;
+}
+
 .features {
     padding: 5em 0;
     text-align: center;
@@ -301,7 +306,7 @@ footer div {
     width: 25%;
 }
 
-footer h5 {
+footer h4 {
     font-size: 1.6em;
     margin-bottom: 1em;
     color: white;
@@ -512,7 +517,7 @@ footer a:hover {
     body {
         font-size: 1.1em;
     }
-    
+
     nav {
         padding: 1em 2em;
     }
