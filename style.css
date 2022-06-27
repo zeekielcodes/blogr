@@ -333,6 +333,18 @@ footer a:hover {
     display: none;
 }
 
+
+@media (max-width:1024px) {
+    nav {
+        padding: 2em 5em;
+    }
+
+    /* .mobile {
+        display: flex;
+        
+    } */
+}
+
 @media (max-width:798px) {
 
     nav {
@@ -546,15 +558,4 @@ footer a:hover {
     .banner h1 {
         font-size: 3em;
     }
-}
-
-@media (max-width:1024px) {
-    nav {
-        padding: 2em 5em;
-    }
-
-    /* .mobile {
-        display: flex;
-        
-    } */
 }
