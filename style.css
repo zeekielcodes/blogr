@@ -392,7 +392,7 @@ footer a:hover {
         position: relative;
         margin: unset;
         /* width: 100%; */
-        font-size: .7em;
+        /* font-size: .7em; */
         /* padding: 1em; */
         background: hsl(240, 2%, 79%);
     }
@@ -441,6 +441,7 @@ footer a:hover {
 
     .feat {
         flex-direction: column-reverse;
+        padding-bottom: 6em;
     }
 
     .feat2 {
@@ -515,7 +516,7 @@ footer a:hover {
 @media (max-width:600px) {
 
     body {
-        font-size: 1.1em;
+        font-size: unset;
     }
 
     nav {
