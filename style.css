@@ -403,6 +403,10 @@ footer a:hover {
 
     }
 
+    nav ul li:hover img {
+        transform: rotate(180deg);
+    }
+
  
 
     hr {
@@ -541,5 +545,15 @@ footer a:hover {
 
     .banner h1 {
         font-size: 3em;
+    }
+}
+
+@media (max-width:1024px) {
+    nav {
+        padding: 2em 5em;
+    }
+
+    .mobile {
+        display: flex;
     }
 }
