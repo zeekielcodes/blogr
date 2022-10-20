@@ -23,5 +23,5 @@ This is my solution to the [Blogr landing page challenge on Frontend Mentor](htt
 ## Author
 
 - Portfolio - [Ezekiel The Face](https://thefacecodes.web.app)
-- Frontend Mentor - [@iamtheface](https://www.frontendmentor.io/profile/iamtheface)
+- Frontend Mentor - [@iamtheface](https://www.frontendmentor.io/profile/thefacecodes)
 - Twitter - [@thefacecodes](https://www.twitter.com/thefacecodes)
